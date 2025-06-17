@@ -12,6 +12,16 @@
 
 <body class="wedding">
 	<div class='background' id='background'></div>
+	<div class="music-player">
+		<audio id="bg-music" loop>
+			<source src="/media/Женя_Трофимов_-_Привет.mp3" type="audio/mpeg">
+			Ваш браузер не поддерживает аудио элемент.
+		</audio>
+		<button id="music-toggle" class="music-btn" aria-label="Управление музыкой">
+			<img src="/img/play.png" alt="Play" class="music-icon active">
+			<img src="/img/pause.png" alt="Pause" class="music-icon">
+		</button>
+	</div>
 	<header class="header">
 		<div class="wrapper">
 			<div class="container__header">
