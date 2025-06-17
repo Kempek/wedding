@@ -247,20 +247,24 @@
 					<label>С кем Вы пойдёте на праздник?
 						<input type="text" placeholder="Введите здесь имя и фамилию">
 					</label>
+					<div id="form-container">
+						<fieldset>
+							<legend>Какой алкоголь Вы предпочитаете?</legend>
+							<label><input type="checkbox"> Красное вино</label>
+							<label><input type="checkbox"> Белое вино</label>
+							<label><input type="checkbox"> Шампанское</label>
+							<label><input type="checkbox" checked> Водка</label>
+							<label><input type="checkbox" checked> Самогон</label>
+							<label><input type="checkbox"> Виски</label>
+							<label><input type="checkbox"> Коньяк</label>
+							<label><input type="checkbox"> Безалкогольные напитки</label>
+						</fieldset>
 
-					<fieldset>
-						<legend>Какой алкоголь Вы предпочитаете?</legend>
-						<label><input type="checkbox"> Красное вино</label>
-						<label><input type="checkbox"> Белое вино</label>
-						<label><input type="checkbox"> Шампанское</label>
-						<label><input type="checkbox" checked> Водка</label>
-						<label><input type="checkbox" checked> Самогон</label>
-						<label><input type="checkbox"> Виски</label>
-						<label><input type="checkbox"> Коньяк</label>
-						<label><input type="checkbox"> Безалкогольные напитки</label>
-					</fieldset>
-
-					<button class='form-button' type="submit">отправить</button>
+						<button id="submit-btn" class="form-button" type="submit">отправить</button>
+					</div>
+					<div class='thanks' id="thank-you-message" style="display: none;">
+						<h2>Спасибо вам за ваш ответ</h2>
+					</div>
 				</form>
 			</section>
 		</div>
@@ -279,6 +283,7 @@
 		</section>
 	</footer>
 	<script src="./js/timer.js"></script>
+	<script src="./js/interactive.js"></script>
 	<script src="./js/main.js"></script>
 	<script src="./js/background.js"></script>
 
