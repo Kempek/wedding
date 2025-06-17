@@ -1,0 +1,686 @@
+/* font-family: 'French Kiss KG script', arial; */
+/* В файле style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+@font-face {
+	font-family: 'Carattere'; /* Название шрифта (можно любое) */
+	src: url('../fonts/Carattere-Regular.ttf') format('truetype');
+	font-weight: 400; /* Обычное начертание */
+	font-style: normal;
+}
+@font-face {
+	font-family: 'French Kiss script'; /* Название шрифта (можно любое) */
+	src: url('../fonts/FrenchKissscript.ttf') format('truetype');
+	font-weight: 400; /* Обычное начертание */
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Mirra-Regular'; /* Название шрифта (можно любое) */
+	src: url('../fonts/Mirra.otf') format('opentype');
+	font-weight: 400; /* Обычное начертание */
+	font-style: normal;
+}
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body {
+}
+.wedding {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	flex-direction: column;
+	align-content: center;
+}
+.section-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+}
+.wrapper {
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	align-items: center;
+	color: #b70f23;
+	flex-direction: column;
+	min-height: 100%;
+}
+.header {
+	display: block;
+	margin-top: 143px;
+}
+.container__header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	text-align: center;
+	align-items: center;
+}
+.container__header h1,
+.container__header h2 {
+	font-family: 'French Kiss script';
+	font-weight: 100;
+	font-size: 64px;
+	color: #b70f23;
+}
+h2 {
+	font-family: 'French Kiss script';
+	font-weight: 100;
+	font-size: 64px;
+}
+.container__header p {
+	font-family: 'Mirra-Regular';
+	color: #b70f23;
+	font-size: 48px;
+	font-weight: 100;
+}
+.header__images {
+	width: 380px;
+	height: 323px;
+	border-radius: 40px;
+	margin-top: 10px;
+	margin-bottom: 23px;
+	overflow: hidden;
+}
+.container__header img {
+	width: 380px;
+	height: 323px;
+	object-fit: cover;
+	object-position: 50% 50%;
+	transform: scale(1.1);
+}
+.invite-message {
+	width: 430px;
+	height: 368px;
+	background-color: #65000a;
+	border-radius: 24px;
+	margin-top: 215px;
+	opacity: 0.7;
+}
+.invite-message__title {
+	line-height: 0.8;
+	width: 296px;
+	height: 130px;
+	border-bottom: 1px solid #fff;
+	padding-top: 25px;
+	padding-left: 25px;
+}
+.invite-message__title h2 {
+	color: white;
+}
+p {
+	font-family: 'Onest', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.invite-message__container {
+	width: 311px;
+	height: 155px;
+	padding: 10px;
+	padding-top: 14px;
+	padding-left: 18px;
+}
+.invite-message__container p {
+	padding-bottom: 20px;
+	line-height: 1.35;
+}
+
+.timer-content {
+	display: flex;
+	margin-top: 58px;
+	text-align: center;
+	flex-direction: column;
+}
+
+.timer {
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.timer__block {
+	display: flex;
+	flex-direction: column;
+}
+
+.timer__number {
+	font-weight: 100;
+	line-height: 1;
+	font-family: 'Mirra-Regular';
+	font-size: 50px;
+}
+
+.timer__label {
+	font-family: 'Onest', sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+	text-transform: lowercase;
+	color: #171616;
+}
+.date-content {
+	margin-top: 69px;
+	max-width: 440px;
+}
+.date-content h2 {
+	text-align: center;
+}
+.calendar {
+	border-collapse: separate;
+	border-spacing: 17px 13px;
+	margin-top: -1px;
+	margin-left: 9px;
+}
+.calendar tr {
+	font-family: 'Onest', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	color: #171616;
+	margin-top: -2px;
+}
+.calendar th {
+	font-family: 'Onest', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	color: #b70f23;
+	width: 22.5px;
+	text-align: center;
+}
+.calendar td {
+	text-align: center;
+}
+.weekend {
+	position: relative;
+}
+
+.weekend::after {
+	content: '';
+	position: absolute;
+	right: -6px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 34.82px;
+	height: 34.82px;
+	background-image: url('/img/heart.png');
+	background-size: contain;
+
+	/* Фильтр для красного цвета */
+	filter: brightness(0) invert(15%) sepia(100%) hue-rotate(300deg)
+		saturate(1000%);
+}
+
+.plan {
+	display: flex;
+	margin-top: 40px;
+}
+.plan-center {
+	margin-top: 43px;
+	width: 2px;
+	height: 416px;
+	border: 1px solid #b70f23;
+}
+.plan-right {
+	margin-top: 80px;
+	gap: 20px;
+}
+.plan-right .event-time {
+	width: 200px;
+}
+
+.event {
+	margin-bottom: 72px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+.circle {
+	border-radius: 50%;
+	background-color: #b70f23;
+	height: 10px;
+	width: 10px;
+}
+.event-time {
+	font-family: 'Onest', sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	color: #171616;
+	margin-top: -5px;
+	min-width: 220px;
+}
+.event-title {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+.event-title p {
+	font-family: 'French Kiss script';
+	font-weight: 400;
+	font-size: 36px;
+	color: #b70f23;
+	text-align: center;
+	width: 100%;
+}
+.plan-left .event-title::after,
+.plan-right .event-title::before {
+	content: '';
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #b70f23;
+}
+.plan-left .event-title::before,
+.plan-right .event-title::after {
+	content: '';
+	display: none;
+}
+.plan-left .event:nth-child(2) img {
+	width: 49px;
+	height: 50px;
+}
+.plan-left .event:nth-child(3) img {
+	width: 39px;
+	height: 39px;
+}
+.plan-right .event:nth-child(2) {
+	margin-top: 10px;
+}
+.plan-left .event:nth-child(2) {
+	margin-top: -10px;
+}
+.plan-left .event:nth-child(3) {
+	margin-top: 5px;
+	margin-bottom: unset;
+}
+
+.event-title::after {
+	content: '';
+	margin-right: -7px;
+}
+.event-title::before {
+	margin-left: -7px;
+}
+.plan img {
+	width: 38px;
+	aspect-ratio: 1;
+}
+
+.location {
+	display: flex;
+	flex-direction: row;
+	margin-top: 76px;
+	width: 430px;
+	height: 319px;
+	background-color: #65000a;
+	border-radius: 24px;
+	align-items: center;
+}
+.map {
+	padding: 16px;
+	margin-top: 17px;
+}
+.map-image {
+	background-image: url('/img/map.webp');
+	width: 161px;
+	height: 184px;
+	border-radius: 14px;
+	position: relative;
+}
+.description {
+	text-align: right;
+	margin-top: 50px;
+	height: 100%;
+}
+.description h2 {
+	color: #fff;
+	line-height: 0.75;
+	padding-right: 20px;
+}
+.description-h2 {
+	font-family: 'Carattere';
+	font-size: 50px;
+	margin-top: 22px;
+}
+.description p {
+	padding-right: 20px;
+}
+.border-line {
+	height: 1px;
+	background-color: #fff;
+	margin: 14px 0px;
+	margin-left: 6px;
+}
+.map-image button {
+	position: absolute;
+	font-family: 'Onest';
+	font-size: 14px;
+	font-weight: 200;
+	bottom: 10px;
+	border-radius: 3px;
+	color: #6c000c;
+	border: 0.5px solid #70000d;
+	margin: 0 18px;
+	width: calc(100% - 15px * 2);
+}
+.dress-code {
+	width: 398px;
+	text-align: center;
+}
+.dress-code-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 82px;
+}
+.dress-code-header p {
+	margin-top: 15px;
+	width: 335px;
+	text-align: center;
+	font-size: 18px;
+	color: #171616;
+}
+
+.dress-code-description {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 54px;
+	padding-right: 4px;
+}
+.dress-code-colors {
+	display: flex;
+	gap: 9px;
+	margin-top: 47px;
+}
+.dress-code-colors__block {
+	gap: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.color-item {
+	width: 46px;
+	aspect-ratio: 1;
+	background-color: #000;
+	border-radius: 50%;
+	box-shadow: -3px 2px 3px #4b3d3040;
+}
+.woman-colors .dress-code-colors__block:nth-child(1) .color-item:nth-child(1) {
+	background-color: #971827;
+}
+.woman-colors .dress-code-colors__block:nth-child(1) .color-item:nth-child(2) {
+	background-color: #9f1427;
+}
+.woman-colors .dress-code-colors__block:nth-child(1) .color-item:nth-child(3) {
+	background-color: #792131;
+}
+.woman-colors .dress-code-colors__block:nth-child(2) .color-item:nth-child(1) {
+	background-color: #b7b5b3;
+}
+.woman-colors .dress-code-colors__block:nth-child(2) .color-item:nth-child(2) {
+	background-color: #f5ebdc;
+}
+/* Дресс-код для мужчин */
+.man-colors .dress-code-colors__block:nth-child(1) .color-item:nth-child(1) {
+	background-color: #2d2c2a;
+}
+.man-colors .dress-code-colors__block:nth-child(1) .color-item:nth-child(2) {
+	background-color: #6b0908;
+}
+.man-colors .dress-code-colors__block:nth-child(2) .color-item:nth-child(1) {
+	background-color: #474a51;
+}
+.man-colors .dress-code-colors__block:nth-child(2) .color-item:nth-child(2) {
+	background-color: #898886;
+}
+.man-colors .dress-code-colors__block:nth-child(2) .color-item:nth-child(3) {
+	background-color: #eaeae8;
+}
+.dress-code-description h2 {
+	font-size: 48px;
+	font-weight: 400;
+}
+
+.dress-code-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 215px;
+}
+.info-man {
+	align-items: flex-start;
+	margin-left: -5px;
+}
+.dress-code-info p {
+	color: #171616;
+	text-align: right;
+	margin-top: 5px;
+}
+.man-colors {
+	margin-top: 14px;
+}
+.info-man p {
+	text-align: left;
+	width: 250px;
+	margin-left: 8px;
+}
+
+.description-man {
+	margin-top: 65px;
+}
+
+.wishes {
+	margin-top: 121px;
+	background-color: #65000a;
+	border-radius: 24px;
+	width: 430px;
+	height: 267px;
+}
+
+.wishes h2 {
+	color: #ffffff;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.border-line-wishes {
+	height: 1px;
+	background-color: #fff;
+	width: 239px;
+	margin-top: -4px;
+}
+.wishes p {
+	font-family: 'Onest';
+	font-weight: 100;
+	font-size: 20px;
+	width: 300px;
+	padding-top: 22px;
+	padding-left: 19px;
+}
+.form {
+	margin-top: 169px;
+	text-align: center;
+	font-family: 'Onest';
+}
+.form h2 {
+	font-family: 'French Kiss script';
+}
+
+.rsvp-form {
+	padding: 20px;
+	padding-top: 19px;
+	width: 400px;
+	text-align: left;
+}
+
+label,
+fieldset {
+	display: block;
+	margin-bottom: 15px;
+}
+label,
+legend {
+	font-family: 'Onest';
+	font-size: 18px;
+	color: #171616;
+	padding: 3px 5px;
+}
+legend {
+	margin-bottom: 21px;
+}
+input[type='text'],
+select {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #999;
+	background: transparent;
+	padding-top: 16px;
+	margin-left: 0px;
+	font-size: 18px;
+	font-weight: 100;
+	outline: none;
+	font-family: 'Onest';
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+fieldset label {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 10px;
+}
+
+input[type='checkbox'] {
+	appearance: none;
+	width: 26px;
+	height: 26px;
+	border-radius: 5px;
+	border: 1px solid #999;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type='checkbox']:checked {
+	background-color: #820000; /* бордовый цвет */
+	border-color: #820000;
+}
+
+.form-button {
+	width: calc(100% - 9px);
+	background: transparent;
+	border: 1px solid #999;
+	padding: 4px;
+	margin-left: 4px;
+	margin-top: 14px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-size: 20px;
+}
+
+button:hover {
+	background-color: #f0f0f0;
+}
+
+.tg-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 251px;
+	height: 107px;
+	border-radius: 24px;
+	background-color: #65000a;
+	margin-top: 73px;
+	align-items: center;
+}
+.tg-line {
+	width: 76px;
+	height: 1px;
+	background-color: #fff;
+	margin-top: 4px;
+}
+.tg-container h2 {
+	color: #fff;
+	font-size: 40px;
+	margin-top: -8px;
+}
+.tg-container p {
+	color: #fff;
+	font-size: 16px;
+	margin-top: 2px;
+	margin-left: -2px;
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tg-container img {
+	width: 16px;
+	height: 16px;
+	filter: brightness(0) invert(1);
+	margin-top: 13px;
+}
+
+a {
+	color: #b70f23;
+}
+.footer-question {
+	margin-top: 60px;
+	color: #171616;
+	text-align: center;
+}
+.footer-question p {
+	color: #171616;
+	font-size: 20px;
+	margin-top: 12px;
+	margin-bottom: 7px;
+}
+.phone {
+	text-decoration: none;
+	color: #171616;
+	font-size: 23px;
+	margin-top: 12px;
+	font-weight: 200;
+}
+.background {
+	position: absolute; /* обязательно absolute, чтобы прокручивался */
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%; /* занимает минимум экран, растягивается ниже */
+	height: auto; /* автоматически увеличивается по высоте страницы */
+	background-image: url('/img/background190.png');
+	background-repeat: repeat-y; /* бесконечно повторяется вниз */
+	background-size: 100% auto; /* ширина 100%, высота пропорционально */
+	background-position: top center;
+	z-index: -1; /* всегда сзади контента */
+}

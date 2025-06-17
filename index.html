@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+	<title>Максим + Карина</title>
+</head>
+
+<body class="wedding">
+	<div class='background' id='background'></div>
+	<header class="header">
+		<div class="wrapper">
+			<div class="container__header">
+				<h1>Приглашение на свадьбу</h1>
+				<p>30 | 08 | 2025</p>
+				<div class="header__images">
+					<img src="img/people.webp" alt="Фото молодоженов" />
+				</div>
+				<h2>Максим & Карина</h2>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="wrapper">
+			<section class="invite-message">
+				<div class="invite-message__title">
+					<h2>Дорогие родные и друзья</h2>
+				</div>
+				<div class="invite-message__container">
+					<p>
+						С огромной радостью приглашаем Вас на самое главное событие в
+						нашей жизни — нашу свадьбу!
+					</p>
+					<p>
+						Будем бесконечно счастливы разделить с Вами этот особенный и
+						важный для нас день!
+					</p>
+				</div>
+			</section>
+			<section class="timer-content">
+				<h2>Ждём вас через</h2>
+				<div class="timer">
+					<div class="timer__block">
+						<span class="timer__number" id="days">00</span>
+						<span class="timer__label">дней</span>
+					</div>
+					<div class="timer__block">
+						<span class="timer__number" id="hours">00</span>
+						<span class="timer__label">часов</span>
+					</div>
+					<div class="timer__block">
+						<span class="timer__number" id="minutes">00</span>
+						<span class="timer__label">минут</span>
+					</div>
+					<div class="timer__block">
+						<span class="timer__number" id="seconds">00</span>
+						<span class="timer__label">секунд</span>
+					</div>
+				</div>
+			</section>
+			<section class="date-content">
+				<h2>Август 2025</h2>
+				<table class="calendar">
+					<thead>
+						<tr>
+							<th>ПН</th>
+							<th>ВТ</th>
+							<th>СР</th>
+							<th>ЧТ</th>
+							<th>ПТ</th>
+							<th>СБ</th>
+							<th>ВС</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td class="weekend">30</td>
+							<td>31</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section class="plan">
+				<div class="plan-left">
+					<div class="event">
+						<img src="img/сбор гостей.webp" t="icons" />
+						<div class="event-title">
+							<p>Сбор гостей</p>
+						</div>
+						<div class="event-time">15:00</div>
+					</div>
+					<div class="event">
+						<img src="img/ужин.webp" alt="icons" />
+						<div class="event-title">
+							<p>Праздничный ужин</p>
+						</div>
+						<div class="event-time">17:00</div>
+					</div>
+					<div class="event">
+						<img src="img/завршение вечера.webp" alt="icons" />
+						<div class="event-title">
+							<p>Завершение вечера</p>
+						</div>
+						<div class="event-time">22:00</div>
+					</div>
+				</div>
+				<div class="plan-center"></div>
+				<div class="plan-right">
+					<div class="event">
+						<img src="img/венчание.webp" alt="icons" />
+						<div class="event-title">
+							<p>Церемония</p>
+						</div>
+						<div class="event-time">16:00</div>
+					</div>
+
+					<div class="event">
+						<img src="img/торт.webp" alt="icons" />
+						<div class="event-title">
+							<p>Торт</p>
+						</div>
+						<div class="event-time">23:00</div>
+					</div>
+				</div>
+			</section>
+			<section class="location">
+				<div class="map">
+					<div class='map-image'><button onclick='goToCard()'>Открыть на карте</button></div>
+				</div>
+				<div class="description">
+					<h2>Место проведения</h2>
+					<div class='border-line'></div>
+					<p>Рамонский р-он, Айдаровское с.п., тер. Промышленная, ул. 4-я Промышленная зона, 18</p>
+					<h2 class='description-h2'>Jani Resort</h2>
+			</section>
+			<section class='dress-code'>
+				<div class='dress-code-header'>
+					<h2>Дресс - код</h2>
+					<p>Для нас главное – Ваше присутствие!
+						Но мы будем рады, если в своих нарядах Вы поддержите нашу цветовую гамму и стиль свадьбы!</p>
+				</div>
+				<div class='dress-code-description'>
+					<div class='dress-code-colors woman-colors'>
+						<div class='dress-code-colors__block'>
+							<div class="color-item"></div>
+							<div class="color-item"></div>
+							<div class="color-item"></div>
+						</div>
+						<div class='dress-code-colors__block'>
+							<div class="color-item"></div>
+							<div class="color-item"></div>
+						</div>
+					</div>
+					<div class='dress-code-info'>
+						<h2>Девушкам</h2>
+						<p>Будем рады видеть Вас в коктейльном платье или классическом костюме.</p>
+					</div>
+				</div>
+				<div class='dress-code-description description-man'>
+					<div class='dress-code-info info-man'>
+						<h2>Мужчинам</h2>
+						<p>Мы будем рады, если вы отдадите предпочтение костюму и туфлям.
+						</p>
+					</div>
+					<div class='dress-code-colors man-colors'>
+						<div class='dress-code-colors__block'>
+							<div class="color-item"></div>
+							<div class="color-item"></div>
+						</div>
+						<div class='dress-code-colors__block'>
+							<div class="color-item"></div>
+							<div class="color-item"></div>
+							<div class="color-item"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='wishes'>
+				<h2>
+					Пожелания
+				</h2>
+				<div class='border-line-wishes'></div>
+				<p>В качестве подарка мы будем рады вкладу в бюджет нашей семьи. Он точно поможет воплотить нашу мечту в
+					реальность.</p>
+			</section>
+			<section class='form'>
+				<h2>Анкета гостя</h2>
+				<form class="rsvp-form">
+					<label>Ваше имя и фамилия
+						<input type="text" placeholder="Введите здесь свое имя и фамилию">
+					</label>
+
+					<label>Подтвердите Ваше присутствие до 30.07.
+						<select>
+							<option>Обязательно буду</option>
+							<option>Буду</option>
+							<option>К сожалению, не смогу присутствовать</option>
+
+						</select>
+					</label>
+
+					<label>С кем Вы пойдёте на праздник?
+						<input type="text" placeholder="Введите здесь имя и фамилию">
+					</label>
+
+					<fieldset>
+						<legend>Какой алкоголь Вы предпочитаете?</legend>
+						<label><input type="checkbox"> Красное вино</label>
+						<label><input type="checkbox"> Белое вино</label>
+						<label><input type="checkbox"> Шампанское</label>
+						<label><input type="checkbox" checked> Водка</label>
+						<label><input type="checkbox" checked> Самогон</label>
+						<label><input type="checkbox"> Виски</label>
+						<label><input type="checkbox"> Коньяк</label>
+						<label><input type="checkbox"> Безалкогольные напитки</label>
+					</fieldset>
+
+					<button class='form-button' type="submit">отправить</button>
+				</form>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<button class='tg-container' onclick='goToTelegramChat()'>
+			<img src='./img/tg.webp' alt='tg'>
+			<h2>Телеграм чат</h2>
+			<div class='tg-line'></div>
+			<p>фото и видео с Дня свадьбы</p>
+		</button>
+		<section class='footer-question'>
+			<h2><a href='https://t.me/+VIYd4TOTQak0NzZi'>По вопросам</a></h2>
+			<p>огранизатор Елена</p>
+			<a class='phone' href='tel:+79103458567'>+7 (910) 345-85-67</a>
+		</section>
+	</footer>
+	<script src="./js/timer.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/background.js"></script>
+
+</body>
+
+</html>
