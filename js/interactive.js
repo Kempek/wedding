@@ -36,25 +36,18 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (music && toggleBtn) {
 		const icons = toggleBtn.querySelectorAll('.music-icon')
 		let isAudioReady = false
-
-		// Инициализация аудио (без автоматического load)
 		music.volume = 0.3
-
-		// Обновление кнопки
 		const updateButton = () => {
 			const isPlaying = !music.paused
 			icons[0].classList.toggle('active', !isPlaying)
 			icons[1].classList.toggle('active', isPlaying)
 		}
-
-		// Обработчик клика
 		toggleBtn.addEventListener('click', async () => {
 			try {
 				if (music.paused) {
-					// Первый запуск - только после явного действия пользователя
 					if (!isAudioReady) {
 						await music.play().then(() => {
-							music.pause() // Сразу ставим на паузу после первого запуска
+							music.pause()
 							isAudioReady = true
 						})
 					}
@@ -65,19 +58,14 @@ document.addEventListener('DOMContentLoaded', function () {
 				updateButton()
 			} catch (error) {
 				console.error('Ошибка:', error)
-				// Показываем иконку play при ошибке
 				icons[0].classList.add('active')
 				icons[1].classList.remove('active')
 			}
 		})
-
-		// Разблокировка при любом клике на странице
 		const handleFirstInteraction = () => {
 			document.removeEventListener('click', handleFirstInteraction)
-			// Только помечаем как готовое, не загружаем заранее
 			isAudioReady = true
 		}
-
 		document.addEventListener('click', handleFirstInteraction, { once: true })
 		updateButton()
 	}
