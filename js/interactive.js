@@ -70,3 +70,24 @@ document.addEventListener('DOMContentLoaded', function () {
 		updateButton()
 	}
 })
+// Устанавливаем первую опцию активной по умолчанию
+document.addEventListener('DOMContentLoaded', function () {
+	const firstOption = document.querySelector('.options li')
+	document.querySelector('.selected-option').textContent =
+		firstOption.textContent
+})
+
+// Обработчик клика на выбранную опцию (открытие/закрытие списка)
+document
+	.querySelector('.selected-option')
+	.addEventListener('click', function () {
+		document.querySelector('.custom-select').classList.toggle('active')
+	})
+
+// Обработчик выбора опции
+document.querySelectorAll('.options li').forEach(option => {
+	option.addEventListener('click', function () {
+		document.querySelector('.selected-option').textContent = this.textContent
+		document.querySelector('.custom-select').classList.remove('active')
+	})
+})

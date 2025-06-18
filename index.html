@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 	<title>Максим + Карина</title>
 </head>
 
@@ -37,18 +39,20 @@
 	<main>
 		<div class="wrapper">
 			<section class="invite-message">
-				<div class="invite-message__title">
-					<h2>Дорогие родные и друзья</h2>
-				</div>
-				<div class="invite-message__container">
-					<p>
-						С огромной радостью приглашаем Вас на самое главное событие в
-						нашей жизни — нашу свадьбу!
-					</p>
-					<p>
-						Будем бесконечно счастливы разделить с Вами этот особенный и
-						важный для нас день!
-					</p>
+				<div class='invite-message__block'>
+					<div class="invite-message__title">
+						<h2>Дорогие родные и друзья</h2>
+					</div>
+					<div class="invite-message__container">
+						<p>
+							С огромной радостью приглашаем Вас на самое главное событие в
+							нашей жизни — нашу свадьбу!
+						</p>
+						<p>
+							Будем бесконечно счастливы разделить с Вами этот особенный и
+							важный для нас день!
+						</p>
+					</div>
 				</div>
 			</section>
 			<section class="timer-content">
@@ -246,12 +250,20 @@
 					</label>
 
 					<label>Подтвердите Ваше присутствие до 30.07.
-						<select>
+						<!-- <select>
 							<option>Обязательно буду</option>
 							<option>Буду</option>
 							<option>К сожалению, не смогу присутствовать</option>
 
-						</select>
+						</select> -->
+						<div class="custom-select">
+							<div class="selected-option">Выберите...</div>
+							<ul class="options">
+								<li>Обязательно буду</li>
+								<li>Буду</li>
+								<li>К сожалению, не смогу присутствовать</li>
+							</ul>
+						</div>
 					</label>
 
 					<label>С кем Вы пойдёте на праздник?
@@ -296,6 +308,7 @@
 	<script src="./js/interactive.js"></script>
 	<script src="./js/main.js"></script>
 	<script src="./js/background.js"></script>
+	<script src="./js/animations.js"></script>
 
 </body>
 
