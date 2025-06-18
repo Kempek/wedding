@@ -806,7 +806,7 @@ select {
 		width: 100%;
 	}
 	.description {
-		margin-top: 41px;
+		margin-top: 11px;
 	}
 
 	.header__images {
@@ -839,5 +839,21 @@ select {
 	.rsvp-form {
 		padding: 0 5px;
 		width: calc(100% - 10px);
+	}
+	.description-h2 {
+		font-size: 50px;
+		line-height: 1;
+	}
+	.description h2 {
+		font-size: 42px;
+		line-height: 1;
+		padding-right: 8px;
+	}
+	.description p {
+		font-size: 13px;
+	}
+	.border-line {
+		margin: 7px 0px;
+		margin-left: 0;
 	}
 }
