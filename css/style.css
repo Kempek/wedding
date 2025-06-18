@@ -768,8 +768,14 @@ select {
 }
 
 .selected-option {
+	display: flex;
 	cursor: pointer;
-	text-align: left; /* Выравнивание текста */
+	text-align: left;
+	justify-content: space-between;
+}
+.selected-option img {
+	width: 10px;
+	height: 10px;
 }
 
 .options {
